@@ -8,7 +8,7 @@ It'll be useful later on to be able to refer to a table by name.  (Actually, if 
 
 To name a table, shift it to the right and add a name like "SymbolName:", with a colon at the end.
 
-Verb: | text | person | tense | root |
+| Verb: | text | person | tense | root |
 |--|--------|--------|-------|-----|
 | | ninapenda | 1 | present | pend |
 | | unapenda | 2 | present |  pend |
@@ -24,7 +24,7 @@ Say we wanted to have separate tables for verbs and nouns.  That's a good idea, 
 
 We could put these in separate sheets, but we can also put them in the same sheet so long as they have names.
 
-Verb: | text | person | tense | root |
+| Verb: | text | person | tense | root |
 |--|--------|--------|-------|-----|
 | | ninapenda | 1 | present | pend |
 | | unapenda | 2 | present |  pend |
@@ -44,7 +44,7 @@ If you sync & validate in the Gramble Control Panel, you'll see that there are n
 
 If you're reading other people's Gramble code, you'll often see another operation in here, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but "table:" can help with the overall structure of more complex programs.  (We'll see how in the next lesson.)
 
-Verb: | table: | text text | person | tense | root |
+| Verb: | table: | text | person | tense | root |
 |--|--|------|--------|-------|-----|
 | | | ninapenda | 1 | present | pend |
 | | | unapenda | 2 | present |  pend |
