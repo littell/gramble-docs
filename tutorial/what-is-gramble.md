@@ -4,6 +4,8 @@ title: What is Gramble?
 sidebar_label: What is Gramble?
 ---
 
+[index](../) | [next ->](gramble-programs)
+
 ## What is Gramble?
 
 Gramble is a programming language for *linguistic programming*: building tools that create or respond to human language words and sentences.  It's meant to be easier to read and write, so that people can make linguistic programs in their languages without necessarily having to have a degree in computer science.

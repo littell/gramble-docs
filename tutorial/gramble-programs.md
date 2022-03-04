@@ -4,6 +4,8 @@ title: What is a Gramble program?
 sidebar_label: What's a Gramble program?
 ---
 
+[<- prev](what-is-gramble) | [index](../) | [next ->](first-program)
+
 ## What's a Gramble program?
 
 A Gramble program is a way of specifying a *linguistic database* in an efficient manner, without having to list out every possible entry.  This is useful for very complex languages like Swahili or Kanyen'keha (in which there are millions of possible verb forms), or for syntactic phenomena like sentences (where we can't possibly list every possible sentence), or for procedures like Romanization where you want to produce a Roman-alphabet version of any user input, even if it's not a word you've ever seen before.
