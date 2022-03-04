@@ -4,6 +4,6 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
 
 ### Tutorial
 
-- (What is Gramble?)[tutorial/what-is-gramble]
-- (What's a Gramble program?)[tutorial/gramble-programs]
-- (Your first program)[tutorial/first-program]
+- [What is Gramble?](tutorial/what-is-gramble)
+- [What's a Gramble program?](tutorial/gramble-programs)
+- [Your first program](tutorial/first-program)

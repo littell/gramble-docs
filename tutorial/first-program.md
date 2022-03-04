@@ -25,3 +25,5 @@ In the last post, we saw a little spreadsheet representing Swahili verbs.  This 
 | amependa | 3 | perfect | pend |
 
 You can copy and paste this table into your Google Sheet and the Gramble IDE will understand it and be able to query it, sample from it, etc.
+
+[<- prev](what-is-gramble) | [index](../) | [next ->](understanding-structure)

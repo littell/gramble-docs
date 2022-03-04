@@ -24,3 +24,5 @@ COMING SOON: If you're an experienced "linguist-programmer" (for example, if you
 You *could* write Gramble in text files or in an ordinary spreadsheet editor, but right now the best way to write it is in Google Sheets.  We've got an "add-on" program that you can embed inside Google Sheets itself, that turns Sheets into an interactive development environment for Gramble.  (And because Google Sheets has sharing built-in, the whole team can work at the same time on the same document.  That's a killer feature for the kind of interdisciplanary work that linguistic programming often requires, between speakers, linguists, and programmers.)
 
 We'll soon be publishing the code on the add-on "store", so that anyone can use it.  In the meantime, ask Pat (patrick.littell at nrc.gc.ca) to deploy a new instance for you.
+
+[index](../) | [next ->](gramble-programs)
