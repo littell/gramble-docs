@@ -4,7 +4,7 @@ title: Your first Gramble program
 sidebar_label: Your first program
 ---
 
-[<- prev](what-is-gramble) | [index](../) | [next ->](understanding-structure)
+[<- prev](what-is-gramble) | [index](../) | [next ->](symbol-names)
 
 ## Your first program
 
@@ -28,7 +28,11 @@ In the last post, we saw a little spreadsheet representing Swahili verbs.  This 
 
 You can copy and paste this table into your Google Sheet and the Gramble IDE will understand it and be able to query it, sample from it, etc.
 
-The basic syntactic relationship we can see here is between a *header* (here, the headers are **text**, **person**, etc.) and content associated with those headers (**ninapenda**, **1**, etc.).  All of the headers here represent field names in the abstract database that this program represents, but that won't always be true.
+The basic syntactic relationship we can see here is between a *header* (here, the headers are **text**, **person**, etc.) and content associated with those headers (**ninapenda**, **1**, etc.).  Once you click "highlight" in the Gramble menu, or "Sync & validate" in the side panel, the Gramble IDE will highlight content cells in the same color as the header they're associated with it.  
+
+You can leave cells or whole lines blank, and the content will still be associated with the header above.  (There's a different mechanism if you want to start a second table with different headers below.  Blank lines are ignored, they're not the way you start a new table.)
+
+All of the headers here happen to represent field names in the abstract database that this program represents, but that won't always be true once we start writing more complex programs.
 
 ### An important difference between Gramble programs and database tables
 
@@ -50,7 +54,7 @@ The outputs of this are exactly the same as the above, it results in ``{text: ni
 
 So this is an important distinction between a Gramble program and a database table.  The association between **text** and **ni** here isn't a declaration that the value of the **text** field is "ni".  Rather, you can think of this more like an instruction: "Add 'ni' to the text field!"  We can perform operations multiple times to the same field, whereas a database can't have multiple fields with the same name.
 
-### What restrictions are there, on a database table, for me to use it intact as a Gramble program, or in a Gramble program?
+### What restrictions are there for me to use a database table as a Gramble program, or in a Gramble program?
 
 Basically, if your field names are plain text and don't contain spaces, you're probably fine.
 
@@ -62,25 +66,10 @@ More specifically, field names should NOT:
 * end in a colon
 * be a [reserved word](../reference/reserved-words) like "embed" or "table".
 
-### Naming a table
+Also, note that there's nothing special about the words "text", "person", etc.  Gramble doesn't have any pre-defined field names, these could be "dfaswekjlasdl" so far as Gramble cares.
 
-It'll be useful later on to be able to refer to this table by name.  (Actually, if this is the only thing on the whole worksheet, or the last thing on a worksheet, it already has a name, you can refer to it by the name of the worksheet itself.  But that aside...)
+The client program (the program that makes queries of a Gramble database, for example a verb conjugator webpage) might have certain requirements about what fields are named. E.g., if the client is making requests like ``{person: 1, tense: perfect}``, then the database should have those as fields, or else it'll never be able to return any results!  But Gramble doesn't know or care what "person" or "tense" means.  
 
-To name a table, shift it to the right and add a name like "SymbolName:", with a colon at the end.
+It's up to you to make sure that the client program and database have the same expectations about what fields are named.  (By the way, there's a way to rename fields, so that you can use the same Gramble program with multiple client program even if those clients disagree about what things should be called.)
 
-Verb: | text | person | tense | root |
-|--|--------|--------|-------|-----|
-| | ninapenda | 1 | present | pend |
-| | unapenda | 2 | present |  pend |
-| | anapenda | 3 | present |  pend |
-
-If you're reading other people's Gramble code, you'll often see another operation in here, "table:", in between the symbol name and the table.  This operation doesn't actually do anything here, but "table:" can help with the overall structure of more complex programs.  (We'll see how in the next lesson.)
-
-Verb: | table: | text text | person | tense | root |
-|--|--|------|--------|-------|-----|
-| | | ninapenda | 1 | present | pend |
-| | | unapenda | 2 | present |  pend |
-| | | anapenda | 3 | present |  pend |
-
-
-[<- prev](what-is-gramble) | [index](../) | [next ->](understanding-structure)
+[<- prev](what-is-gramble) | [index](../) | [next ->](symbol-names)

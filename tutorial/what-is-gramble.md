@@ -19,6 +19,8 @@ Some of the tools you can easily make using Gramble include:
 
 This tutorial will take you through a lot of the "background" ideas that you'll need to understand to make language technologies like these, and show you how to make them yourself. 
 
+This tutorial goes rather slowly, but there are a lot of ways that Gramble differs from the programming languages with which you might already be familiar.  It'll seem at the beginning that I'm taking a long time explaining aspects of absolutely trivial programs, but there's no way around this.  It's syntactically and semantically very different from other programming languages and (even though it looks like them) is also very different than a collection of database tables.  I need to point out how, exactly, they differ so that you don't get the wrong ideas once you start to write more complicated programs.
+
 COMING SOON: If you're an experienced "linguist-programmer" (for example, if you already know a toolkit like XFST), we're writing a different version of this specifically for you, outlining the differences between languages like XFST and this language.
 
 ## Getting started

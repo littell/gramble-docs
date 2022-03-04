@@ -7,3 +7,22 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
 - [What is Gramble?](tutorial/what-is-gramble)
 - [What's a Gramble program?](tutorial/gramble-programs)
 - [Your first program](tutorial/first-program)
+- [Naming symbols](tutorial/naming-symbols)
+- [Understanding the structure of Gramble programs](tutorial/understanding-structure)
+
+### Language reference
+
+- Reserved words
+- Operations
+  - table:
+  - or:
+  - test:
+  - testnot:
+- Headers
+  - Embed
+  - Slash (/)
+  - Renaming (>)
+  - ``Maybe``
+  - ``Re``
+  - ``Equals``, ``starts``, ``ends``, ``contains``
+  - ``Hide``
