@@ -13,6 +13,7 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
 ### Language reference
 
 - Reserved words
+- Comments
 - Operations
   - table:
   - or:
@@ -26,3 +27,4 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
   - ``Re``
   - ``Equals``, ``starts``, ``ends``, ``contains``
   - ``Hide``
+- Regular expressions

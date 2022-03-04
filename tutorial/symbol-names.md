@@ -38,11 +38,11 @@ We could put these in separate sheets, but we can also put them in the same shee
 
 If you sync & validate in the Gramble Control Panel, you'll see that there are now *three* symbols you can query/generate/sample from: ``YourSheetName``, ``YourSheetName.Verb``, and ``YourSheetName.Noun``.  ``YourSheetName`` alone now refers to the same table as ``YourSheetName.Noun``, because that's the last-defined table on the page.
 
-(Actually, you don't necessarily have to name the last table, since it's going to have a name anyway.  But we usually do anyway.  It's nice to keep similar content in similar columns, rather than have the last one shifted over like that.  Speaking of which...)
+(Actually, you don't necessarily have to name the last table, since it's going to have a name anyway.  But we usually do anyway.  It's nice to keep similar content in similar columns, rather than have the last one shifted left because it doesn't have a name.  Speaking of which...)
 
 ### Marking tables with "table:"
 
-If you're reading other people's Gramble code, you'll often see another operation in here, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but "table:" can help with the overall structure of more complex programs.  (We'll see how in the next lesson.)
+If you're reading other people's Gramble code, you'll often see another operation in here, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but putting in "table:" regardless can help keep content aligned in more complex programs.  (We'll see why in the next lesson.)
 
 | Verb: | table: | text | person | tense | root |
 |--|--|------|--------|-------|-----|
