@@ -6,7 +6,7 @@
 
 It'll be useful later on to be able to refer to a table by name.  (Actually, if this is the only thing on the whole worksheet, or the last thing on a worksheet, it already has a name, you can refer to it by the name of the worksheet itself.  But that aside...)
 
-To name a table, shift it to the right and add a name like "SymbolName:", with a colon at the end.
+To name a table, shift it one (or more) columns to the right and add a name like "SymbolName:", with a colon at the end.
 
 | Verb: | text | person | tense | root |
 |--|--------|--------|-------|-----|
@@ -14,7 +14,7 @@ To name a table, shift it to the right and add a name like "SymbolName:", with a
 | | unapenda | 2 | present |  pend |
 | | anapenda | 3 | present |  pend |
 
-If you sync & validate in the Gramble Control Panel, you'll see that there are now two symbols you can query/generate/sample from: ``YourSheetName``, and ``YourSheetName.Verb``.  (But these both happen to refer to the same table, like I said, the name of the worksheet refers to the last thing in the worksheet, and the last thing on this sheet is ``Verb``.)
+If you sync & validate in the Gramble Control Panel, you'll see that there are now two symbols you can query/generate/sample from: ``YourSheetName``, and ``YourSheetName.Verb``.  (But these both happen to refer to the same table; like I said, the name of the worksheet refers to the last thing in the worksheet, and the last thing on this sheet is ``Verb``.)
 
 Names follow similar rules to field names: don't use spaces, don't start them with special symbols, etc.  (But *do* end them with colons, this time!  Otherwise Gramble will think it's a header and get confused.)
 
@@ -42,7 +42,7 @@ If you sync & validate in the Gramble Control Panel, you'll see that there are n
 
 ### Marking tables with "table:"
 
-If you're reading other people's Gramble code, you'll often see another operation in here, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but putting in "table:" regardless can help keep content aligned in more complex programs.  (We'll see why in the next lesson.)
+If you're reading other people's Gramble code, you'll often see another operation, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but putting in "table:" regardless can help keep content aligned in more complex programs.  (We'll see why in the next lesson.)
 
 | Verb: | table: | text | person | tense | root |
 |--|--|------|--------|-------|-----|
