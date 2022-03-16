@@ -1,8 +1,8 @@
-[<- prev](symbol-names) | [index](../) | [next ->](../)
+[<- prev](testing) | [index](../) | [next ->](../)
 
 ## Understanding the structure of Gramble programs
 
-The syntax of Gramble isn't all that difficult, but it's very different from other languages, so it's important to understand the basics.
+Our programs are starting to get structurally complicated, so it's time to get specific about how their syntax is interpreted.  The syntax of Gramble isn't all that difficult, but it's very different from other languages, so it's important to understand the basics.
 
 To start off, consider what the Gramble interpreter has to do with the programs in the previous chapter.  It's got a big grid of cells with text in them.  Some of those cells contain actual pieces of linguistic content like "penda" or "1".  Others are names of fields like "text" or "person".  Others are things like symbol names ("Verb:") and commands that do various things ("table:").
 
@@ -62,4 +62,4 @@ If you've got a cell that *can't* be interpreted as a comment, block-starter, he
 
 Although it might feel demoralizing to see a page full of red sometimes, error messages are your best friend in the long run.  Really, when we ask Gramble programmers why they prefer working with it compared to other toolkits, a common answer is "It's so much better at spotting errors, and giving me meaningful error messages."  Discovering errors in your code early will save you many hours of frustration later on.
 
-[<- prev](symbol-names) | [index](../) | [next ->](../)
+[<- prev](testing) | [index](../) | [next ->](../)

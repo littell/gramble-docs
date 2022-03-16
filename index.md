@@ -8,6 +8,8 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
 - [What's a Gramble program?](tutorial/gramble-programs)
 - [Your first program](tutorial/first-program)
 - [Naming symbols](tutorial/naming-symbols)
+- [Embedding symbols inside of tables](tutorial/embedding)
+- [Testing your program](tutorial/testing)
 - [Understanding the structure of Gramble programs](tutorial/understanding-structure)
 
 ### Language reference

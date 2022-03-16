@@ -1,4 +1,4 @@
-[<- prev](first-program) | [index](../) | [next ->](understanding-structure)
+[<- prev](first-program) | [index](../) | [next ->](testing)
 
 ## Embedding symbols inside tables
 
@@ -119,4 +119,4 @@ Which should you choose, templatic or hierarchical organization?  It really depe
 
 And don't be afraid to try both out!  You don't necessarily have to decide in advance and commit forever.  You can rearrange things later if you need it; programmers call this "refactoring".  It's good to stop sometimes and consider whether a different structure would express the same phenomenon in a simpler way.  Sometimes something looked like the simpler way at first, but as you added things, it got complicated, and now a different way might be simpler.
 
-[<- prev](first-program) | [index](../) | [next ->](understanding-structure)
+[<- prev](first-program) | [index](../) | [next ->](testing)
