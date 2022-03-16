@@ -42,7 +42,7 @@ If you sync & validate in the Gramble Control Panel, you'll see that there are n
 
 ### Marking tables with "table:"
 
-If you're reading other people's Gramble code, you'll often see another operation, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but putting in "table:" regardless can help keep content aligned in more complex programs.  (We'll see why in the next lesson.)
+If you're reading other people's Gramble code, you'll often see another operation, "table:", in between the symbol name and the table itself.  This operation doesn't actually do anything here, but putting in "table:" regardless can help keep content aligned in more complex programs.  (We'll see why in [another lesson](understanding-structure).)
 
 | Verb: | table: | text | person | tense | root |
 |--|--|------|--------|-------|-----|

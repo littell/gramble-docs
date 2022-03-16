@@ -1,6 +1,6 @@
 ## Documentation for the gramble programming language
 
-Welcome to the documentation for `gramble`: a visual, tabular programming language designed to make linguistic programming easier to write, read, and maintain.
+Welcome to the documentation for `gramble`: a visual, tabular programming language designed to make linguistic programs easier to write, read, and maintain.
 
 ### Tutorial
 
@@ -13,6 +13,7 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
 ### Language reference
 
 - Reserved words
+- Diacritics and special characters
 - Comments
 - Operations
   - table:
@@ -20,7 +21,7 @@ Welcome to the documentation for `gramble`: a visual, tabular programming langua
   - test:
   - testnot:
 - Headers
-  - Embed
+  - ``Embed``
   - Slash (/)
   - Renaming (>)
   - ``Maybe``

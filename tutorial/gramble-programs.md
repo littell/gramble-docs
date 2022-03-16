@@ -96,7 +96,7 @@ For example, the following little Gramble program has the same effect as the Swa
 |         | pend |
 |         | ona |
 | &nbsp; |
-| **var** | **var** | **var** |
+| **embed** | **embed** | **embed** |
 | SUBJECT | TENSE | ROOT |
 
 This might initially look just as complicated as the table above, maybe more complicated.  But in the long run it's much simpler.  For example, to add a new verb, you don't have to specify nine new forms (in our little database above) or thousands of new forms (in real Swahili).  You just add one line to the ROOT chart with the new verb.  You've saved yourself a lot of time and frustration in the future, at the cost of some programming work right now.

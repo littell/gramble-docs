@@ -2,7 +2,7 @@
 
 ## Understanding the structure of Gramble programs
 
-The syntax of Gramble isn't, ultimately, all that difficult, but it's very different from other languages, so it's important to understand the basics.
+The syntax of Gramble isn't all that difficult, but it's very different from other languages, so it's important to understand the basics.
 
 To start off, consider what the Gramble interpreter has to do with the programs in the previous chapter.  It's got a big grid of cells with text in them.  Some of those cells contain actual pieces of linguistic content like "penda" or "1".  Others are names of fields like "text" or "person".  Others are things like symbol names ("Verb:") and commands that do various things ("table:").
 
@@ -28,7 +28,7 @@ This is much easier seen than described; in the Gramble worksheet below, there a
 | | | unapenda | 2 | present |  pend |
 | | | anapenda | 3 | present |  pend |
 | |
-**Noun:** | table: | **text** | **class** | **root**
+**Noun:** | **table:** | **text** | **class** | **root**
 | | | mtu | 1 | tu
 | | | watu | 2 | tu
 | | | mtoto | 1 | toto
@@ -46,7 +46,7 @@ Since (as mentioned above) every worksheet is itself a block, if the first cell 
 
 ### Content
 
-All cells directly under header rows are considered "content" -- generally speaking, they'll represent linguistic information like "ninapenda" or "1" -- until the block ends.  
+All cells directly under header cells are considered "content" -- generally speaking, they'll represent linguistic information like "ninapenda" or "1" -- until the block ends.  
 
 By default, all content cells are interpreted *literally*, which means that any characters (letters, numbers, etc.) inside them will be interpreted as referring only to those characters.  For example, we learned earlier that "%" and ":" have special interpretations in Gramble, but inside a content cell they have no special interpretation, they're just the literal characters "%" and ":".
 
@@ -56,5 +56,10 @@ Gramble projects are assumed from the outset to be multi-specialty collaboration
 
 By the way, if you *do* want regex-like special characters inside cells, you can turn that on with a [special header](../reference/regexes).
 
+### Everything else
+
+If you've got a cell that *can't* be interpreted as a comment, block-starter, header, or content (for example, a content cell hanging out on its own without any header cell above it), then that's an error, and will be highlighted in bright red to call your attention to it.
+
+Although it might feel demoralizing to see a page full of red sometimes, error messages are your best friend in the long run.  Really, when we ask Gramble programmers why they prefer working with it compared to other toolkits, a common answer is "It's so much better at spotting errors, and giving me meaningful error messages."  Discovering errors in your code early will save you many hours of frustration later on.
 
 [<- prev](symbol-names) | [index](../) | [next ->](../)
