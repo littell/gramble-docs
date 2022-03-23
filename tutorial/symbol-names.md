@@ -6,7 +6,7 @@
 
 It'll be useful later on to be able to refer to a table by name.  (Actually, if this is the only thing on the whole worksheet, or the last thing on a worksheet, it already has a name, you can refer to it by the name of the worksheet itself.  But that aside...)
 
-To name a table, shift it one (or more) columns to the right and add a name like "SymbolName:", with a colon at the end.
+To name a table, shift it one (or more) columns to the right and add a name like "SymbolName:", with a colon at the end.  This table is named ``Verb:``.
 
 | Verb: | text | person | tense | root |
 |--|--------|--------|-------|-----|

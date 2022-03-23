@@ -2,7 +2,7 @@
 
 ## Testing your program
 
-It's important to periodically make sure your program is doing what it's supposed to.  But as the program grows, the generation/sampling buttons won't be enough.  You might be interested in one particular form, but your program generates a million forms, you don't want to keep hitting the sample button until you find it, or generate a million forms and search it.  Or, you might be so interested in one form, you miss that you introduced an error that made a thousand other forms wrong!
+It's important to periodically make sure your program is doing what it's supposed to.  But as the program grows, the generation/sampling buttons won't be enough.  You might be interested in one particular form, but your program generates a million forms, you don't want to keep hitting the sample button until you find it, or generate a million forms and search for it.  Or, you might be so interested in one form, you miss that you introduced an error that made a thousand other forms wrong!
 
 So we need a way of testing the units of our program ("unit testing") to make sure they have the outputs we expect.
 
@@ -42,7 +42,7 @@ Having tests like this is especially important when you're changing and rearrang
 
 So when you're refactoring, you want to make sure you have unit tests that capture what you care about, and re-run those tests frequently.  The cycle should be:
 
-* Make a small structural change that you think shouldn't change the results
+* Make a small structural change that you *think* shouldn't change the results
 * Re-run your unit tests to help confirm to yourself that nothing changed
 * Repeat
 
@@ -75,5 +75,7 @@ These tests don't have to be at the "end" of the program, testing whole words.  
 |            |  | a   | 3 | TenseStem |
 
 This is another reason many Gramble programmers default to putting that "table:" command on every table, it means that any table is ready for future tests without having to shift it over later.
+
+Also, make sure you're adding your tests to the correct symbol!  If you were to add these tests under ``Verb:`` instead, they would all fail, or if you added the ``Verb:`` tests to ``TenseStem:`` instead, the tests would fail.  Tests test whether a specific symbol can generate each output, not whether the program as a whole can.
 
 [<- prev](embedding) | [index](../) | [next ->](understanding-structure)
